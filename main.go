@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+
 	fmt.Println("hallo world")
 	menghitungLuasKotak()
 
@@ -34,7 +35,6 @@ func menghitungLuasKotak() {
 	var x3 = 3
 	y3 := 15
 	luas3 := x3 * y3
-
 	fmt.Println("luas", luas)
 	fmt.Println("luas", luas2)
 	fmt.Println("luas", luas3)
