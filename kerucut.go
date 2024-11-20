@@ -7,6 +7,7 @@ import (
 
 func main() {
 	fmt.Println("calculate a cone")
+	fmt.Println("enter a side")
 	conearea()
 }
 
