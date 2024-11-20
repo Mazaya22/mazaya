@@ -6,27 +6,28 @@ import (
 )
 
 func main() {
-	fmt.Println("hitung luas krucut jika tinggi miringnya 4 dan jari jarinya 8")
-	luaskrucut()
+	fmt.Println("calculate a cone")
+	conearea()
 }
 
-/* tinggi miring (t) = 4 jari jari (j) = 8 */
+/* sloping height (t) fingers (j)  */
 
-func luaskrucut() {
+func conearea() {
 	var t float64
 	var r float64
 
-	t = 4
-	r = 8
+	fmt.Println("input umber you want to count")
+	fmt.Scan(&r)
+	fmt.Scan(&t)
 
-	tinggimiring := math.Sqrt(t*t + r*r)
-	luasalasan := math.Pi * r * r
-	luasselimut := math.Pi * r * tinggimiring
-	luaskrucutan := luasalasan + luasselimut
+	slopingheight := math.Sqrt(t*t + r*r)
+	base := math.Pi * r * r
+	blanket := math.Pi * r * slopingheight
+	cone := base + blanket
 
-	fmt.Println("tinggi miring nya adalah", tinggimiring)
-	fmt.Println("luas alasnya adalah", luasalasan)
-	fmt.Println("luas selimutnya adalah", luasselimut)
-	fmt.Println("luas krucutnya adalah", luaskrucutan)
+	fmt.Println("the area of the slant height is", slopingheight)
+	fmt.Println("the area of the base area is", base)
+	fmt.Println("the area of the blanket is", blanket)
+	fmt.Println("the area of the cone is ", cone)
 
 }

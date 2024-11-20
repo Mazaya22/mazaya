@@ -6,15 +6,17 @@ import (
 )
 
 func main() {
-	fmt.Println("menghitung luas lingkaran")
-	hitunglingkaran()
+	fmt.Println("calculate area of a circle")
+	countcircles()
 }
 
 /*r 4*/
-func hitunglingkaran() {
+func countcircles() {
 	var r float64
-	r = 4
-	luaslingkaran := math.Pi * r * r
 
-	fmt.Println("luas lingkaran jika r = 4 adalah", luaslingkaran)
+	fmt.Println("enter a radius you want:")
+	fmt.Scan(&r)
+	surfaceofcircle := math.Pi * r * r
+
+	fmt.Println("circle area with radius", r, "is:", surfaceofcircle)
 }
