@@ -49,7 +49,7 @@ func main() {
 		fmt.Scan(&hg)
 		ls := countcone(hg, rd)
 		fmt.Println("the slaintheight of the cone is :", ls)
-		area := countcone(float64(rd), float64(hg))
+		area := countcone((rd), (hg))
 		fmt.Printf("the area of a cone is : %2f\n", area)
 
 	} else {

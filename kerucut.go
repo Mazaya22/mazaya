@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fmt.Println("calculate a cone")
-	fmt.Println("enter a side")
+
 	conearea()
 }
 
@@ -15,10 +15,12 @@ func main() {
 
 func conearea() {
 	var t float64
+
 	var r float64
 
-	fmt.Println("input umber you want to count")
+	fmt.Println("input number you want to count")
 	fmt.Scan(&r)
+
 	fmt.Scan(&t)
 
 	slopingheight := math.Sqrt(t*t + r*r)
